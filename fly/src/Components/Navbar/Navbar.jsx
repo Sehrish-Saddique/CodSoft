@@ -1,6 +1,5 @@
-import React from 'react'
-
-
+import React,{useState} from 'react'
+ 
 //Importing Icons
 import { SiConsul } from "react-icons/si";
 import { BsPhoneVibrate } from "react-icons/bs";
@@ -9,6 +8,28 @@ import { CgMenuGridO } from "react-icons/cg";
 
 //Importing Images
  const Navbar = () => {
+
+  //REmove the Navbar in small width screens
+
+ const[active, SetActive] = useState('navBarMenu')
+ const showNavBar = () => {
+    SetActive('navBarMenu showNavBar')
+ }
+ const removeNavBar = () => {
+    SetActive('navBarMenu')
+ }
+
+
+
+
+
+
+
+
+
+
+
+
   return (
     <div cllassName="navBar flex">
     <div className="navBarOne flex"> 
@@ -31,23 +52,23 @@ import { CgMenuGridO } from "react-icons/cg";
     <img width="48" height="48" src="https://img.icons8.com/doodle/48/airplane-take-off.png" alt="airplane-logo" className='logo'/>
    </div>
 
-    <div className="navBarMenu flex">
+    <div className={active}>
        <ul className='menu flex'>
-        <li className='listItem'>Home</li>
-        <li className='listItem'>About</li>
-        <li className='listItem'>Offers</li>
-        <li className='listItem'>Seats</li>
-        <li className='listItem'>Destinations</li>
+        <li onClick={removeNavBar} className='listItem'>Home</li>
+        <li onClick={removeNavBar} className='listItem'>About</li>
+        <li onClick={removeNavBar} className='listItem'>Offers</li>
+        <li onClick={removeNavBar} className='listItem'>Seats</li>
+        <li onClick={removeNavBar} className='listItem'>Destinations</li>
        </ul>
-        <button className='btn flex btnOne'>
+        <button onClick={removeNavBar}  className='btn flex btnOne'>
             Contact
         </button>
      </div>
      <button className='btn flex btnTwo'>
             Contact
         </button>
-        <div className="toggleIcon">
-        <CgMenuGridO/>
+        <div onClick={showNavBar} className="toggleIcon">
+        <CgMenuGridO className='icon'/>
         </div>
     </div>
     </div>

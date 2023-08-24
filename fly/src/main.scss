@@ -112,59 +112,106 @@ h2{
     width:100%;
     z-index:1000;
 
-    .navBarOne, .navBarTwo{
-        justify-content: space-between;
-        padding: 1rem;
-        width: 100%;
-    }
-    .navBarOne{
-        background: var(--SecondaryColor);
-        box-shadow: var(--boxShadow);
-        
-        .icon:hover{
+    
+}
+.navBarOne, .navBarTwo{
+    justify-content: space-between;
+    padding: 1rem;
+    width: 100%;
+}
+.navBarOne{
+    background: var(--SecondaryColor);
+    box-shadow: var(--boxShadow);
+    
+   
+}
+
+.icon:hover{
+    color: var(--PrimaryColor);
+}
+.atb{
+    gap: 1rem;
+    span{
+        color: var(--blackColor);
+        font-size: 13px;
+        cursor: pointer;
+        &:hover{
             color: var(--PrimaryColor);
-        }
-        .atb{
-            gap: 1rem;
-            span{
-                color: var(--blackColor);
-                font-size: 13px;
-                cursor: pointer;
-                &:hover{
-                    color: var(--PrimaryColor);
-                    font-size: 700 ;
-                }
-            }
-        }
-    }
-
-
-    .navBarTwo{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        top: 3rem;
-        padding: 1.5rem 1rem;
-        transition: .3s ease-in-out
-    }
-    .logoDiv{
-        .logo{
-            width:20%;
-        }
-    }
-
-    @media screen and (max-width:768px)
-    {
-        .navBarMenu{
-            position: absolute;
-            background:var(--SecondaryColor);
-            padding: 1.5rem;
-            border-radius: 10px;
-            top: 5rem;
-            right:-50%;
-            width: 80%;
-            transform: translateX(50%);
-            z-index: 2000;
+            font-size: 700 ;
         }
     }
 }
+
+
+.navBarTwo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    top: 3rem;
+    padding: 1.5rem 1rem;
+    transition: .3s ease-in-out
+}
+.logoDiv{
+    .logo{
+        width:100%;
+    }
+}
+
+@media screen and (max-width:768px)
+{
+    .navBarMenu{
+        position: absolute;
+        background:var(--SecondaryColor);
+        padding: 1.5rem;
+        border-radius: 10px;
+        top: 8rem;
+        right:-50%;
+        width: 80%;
+        transform: translateX(50%);
+        z-index: 2000;
+        box-shadow: var(--boxShadow);
+        border:  3px solid var(--whiteColor);
+        transition: .4s ease-in-out;
+
+        .menu{
+            flex-direction: column;
+            gap: .5rem;
+            text-align:center;
+             .listItem{
+                padding: .5rem 0;
+                cursor: pointer;
+                color:var(--blackColor);
+                &:hover{
+                    color: var(--PrimaryColor);
+                    font-weight: 700;
+        
+                }
+        }
+    }
+   
+    .btnOne{
+        display:block; 
+        justify-content: center;
+        margin: auto;
+        margin-top: 1rem;
+    }
+
+    }
+    .btnTwo{
+        display: none;
+    }
+    .toggleIcon{
+        .icon{
+            font-size: 30px;
+            color: var(--blackColor);
+        }
+    }
+    .showNavBar{
+        right:50%;
+        transition: .5s ease-in-out;
+    }
+    
+}
+
+//Hero Section ======>' 
+
