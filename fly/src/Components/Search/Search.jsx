@@ -21,7 +21,7 @@ const Search = () => {
         <div className="searchInputs flex">
              {/* singleinput */}
 
-          <div className="singleInput">
+          <div className="singleInput flex">
             <div className="iconDiv">
               <HiOutlineLocationMarker className="icon" />
             </div>
@@ -32,7 +32,7 @@ const Search = () => {
           </div>
             {/* singleinput */}
 
-          <div className="singleInput">
+          <div className="singleInput flex">
             <div className="iconDiv">
               <RiAccountPinCircleLine className="icon" />
             </div>
@@ -42,7 +42,7 @@ const Search = () => {
             </div>
           </div>
             {/* singleinput */}
-          <div className="singleInput">
+          <div className="singleInput flex">
             <div className="iconDiv">
               <RxCalendar className="icon" />
             </div>
@@ -53,7 +53,7 @@ const Search = () => {
           </div>
 
            {/* singleinput */}
-           <div className="singleInput">
+           <div className="singleInput flex">
             <div className="iconDiv">
               <RxCalendar className="icon" />
             </div>
