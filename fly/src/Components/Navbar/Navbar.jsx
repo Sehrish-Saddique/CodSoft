@@ -11,18 +11,27 @@ import { CgMenuGridO } from "react-icons/cg";
 
   //REmove the Navbar in small width screens
 
- const[active, SetActive] = useState('navBarMenu')
+ const [active, SetActive] = useState("navBarMenu");
  const showNavBar = () => {
-    SetActive('navBarMenu showNavBar')
- }
+   SetActive("navBarMenu showNavBar");
+ };
  const removeNavBar = () => {
-    SetActive('navBarMenu')
- }
+   SetActive("navBarMenu");
+ };
 
 
+//Add background color to second Navbar
+const [noBg, addBg] = useState("navBarMenu");
+ const addBgColor = () => {
+    if(window.scrollY>=10){
+        addBg("navBarTwo navbar_with_bg")
+    }
+    else{
+        addBg("navBarTwo")
+    }
+ };
 
-
-
+window.addEventListener('scroll', addBgColor)
 
 
 
@@ -47,7 +56,7 @@ import { CgMenuGridO } from "react-icons/cg";
      </div>
     </div>
    
-   <div className='navBarTwo flex'>
+   <div className={noBg}>
     <div className="logoDiv">
     <img width="48" height="48" src="https://img.icons8.com/doodle/48/airplane-take-off.png" alt="airplane-logo" className='logo'/>
    </div>
