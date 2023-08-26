@@ -1,10 +1,11 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:wght@500;,700&family-Spartan:wght@300;400;500&display=swap');
+   @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
  
  *{
     padding:0;
     margin:0;
     box-sizing: border-box;
-    font-family: 'Spartan', sans-serif;
+    font-family: 'League Spartan', sans-serif;
+    font-family: 'Poppins', sans-serif;
  }
 
  :root{
@@ -326,6 +327,144 @@ h2{
                             opacity: .5;
 
                         }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+//Support Section ======>'
+.support{
+    .sectionContainer{
+        .titlesDiv{
+            text-align: center;
+            small{
+                letter-spacing: .8rem;
+                text-transform: uppercase;
+                font-size:13px;
+                color: var(--blackColor);
+                line-height: 1.5rem;
+            }
+        
+        }
+
+
+        .infoDiv{
+            margin-top: 2rem;
+            gap: 1.5rem;
+            .textDiv{
+                gap:1.5rem;
+                .singleInfo{
+                    .number{
+                        background: var(--PrimaryColor);
+                        padding: 5px 12px;
+                        width: 40px;
+                        border-radius: 3rem;
+                        text-align:center;
+                        font-size: 13px;
+                        font-weight:700;
+                        color:var(--whiteColor);
+                    } 
+                    .colorOne{
+                        background: var(--colorOne);
+                    }
+                    .colorTwo{
+                        background: var(--colorTwo);
+                    }
+                
+                }
+            }
+            .imgDiv{
+                margin: auto;
+                img{
+                    width: 100%;
+                    max-width: 420px;
+                }
+            }
+        }
+    }
+}
+
+//Info Section ======>'
+.info{
+    background: var(--SecondaryColor);
+    .infoContainer{
+        .titleDiv{
+            flex-direction:colun;
+            text-align:center;
+            gap:1.5rem;
+            justify-content: space-between;
+
+        }
+        .cardsDiv{
+            gap: 1.5rem;
+            margin-top:3rem;
+            .singleCard{
+                background: var(--whiteColor);
+                padding:3rem 2rem;
+                border-radius: 10rem;
+                gap: 1rem;
+                text-align:center;
+                margin:auto;
+                height:320px;
+                width:90%;
+                max-width: 250px;
+                .iconDiv{
+                    justify-content: center;
+                    margin: auto;
+                    background: var(--PrimaryColor);
+                    width:max-content;
+                    height:55px;
+                    padding:1rem;
+                    border-radius: 3rem;
+                    .icon{
+                        color:var(--whiteColor)
+                    
+                     }
+                }
+                .cardTitle{
+                    color:var(--blackColor);
+                    font-weight: 700;
+                }
+
+                .colorOne{
+                    background: var(--colorOne);
+                }
+                .colorTwo{
+                    background: var(--colorTwo);
+                }
+            }
+        }
+    }
+}
+
+
+//Lounge Section ======>'
+
+.lounge{
+    .sectionContainer{
+        gap:1.5rem;
+        .imgDiv{
+            margin:auto;
+            img{
+                width:100%;
+                max-width:430px;
+            }
+        }
+        .textDiv{
+            .grids{
+                margin-top: 1rem;
+                gap:1.5rem;
+                .singlegrid{
+                    .gridTitle{
+                        display:block;
+                        padding-bottom:.5rem;
+                        font-weight:700;
+                        color:var(--blackColor);
+                    
+                        
                     }
                 }
             }
