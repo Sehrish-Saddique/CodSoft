@@ -40,7 +40,7 @@ window.addEventListener('scroll', addBgColor)
 
 
   return (
-    <div cllassName="navBar flex">
+    <div className="navBar flex">
     <div className="navBarOne flex"> 
     <div>
     <SiConsul className="icon"/>
@@ -68,14 +68,13 @@ window.addEventListener('scroll', addBgColor)
         <li onClick={removeNavBar} className='listItem'>Offers</li>
         <li onClick={removeNavBar} className='listItem'>Seats</li>
         <li onClick={removeNavBar} className='listItem'>Destinations</li>
-       </ul>
+     
         <button onClick={removeNavBar}  className='btn flex btnOne'>
             Contact
         </button>
+        </ul>
      </div>
-     <button className='btn flex btnTwo'>
-            Contact
-        </button>
+     
         <div onClick={showNavBar} className="toggleIcon">
         <CgMenuGridO className='icon'/>
         </div>
