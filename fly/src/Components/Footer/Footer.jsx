@@ -17,7 +17,7 @@ const Footer = () => {
           <div className='LogoDiv flex'>
             <img className='Logo' src='https://img.icons8.com/doodle/48/airplane-take-off.png' alt='logo'/>
           </div>
-          <p>Your,mind should be   than your feelings, fly!</p>
+          <p>Your,mind should be stronger than your feelings, fly!</p>
           <div className='socialIcon flex'>
             <TiSocialFacebook className='icon'/>
             <AiOutlineTwitter className='icon'/>
